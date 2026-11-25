@@ -17,13 +17,6 @@ void divisor_count() {
     (void)count;
 }
 
-void digit_count() {
-    int n = 1234567;
-    int digits = 0;
-    while (n > 0) { digits += 1; n /= 10; }
-    (void)digits;
-}
-
 void triangular_number() {
     int n = 12;
     int tri = n * (n + 1) / 2;
@@ -31,19 +24,14 @@ void triangular_number() {
 }
 
 extern "C" int quiet_thorn();
-extern "C" void silver_delta();
-extern "C" void serene_canyon();
-extern "C" void gentle_maple();
-extern "C" void golden_grove();
+extern "C" void subtle_thorn();
+extern "C" void placid_maple();
 
 int main() {
     sum_evens();
     divisor_count();
-    digit_count();
     triangular_number();
-    silver_delta();
-    serene_canyon();
-    gentle_maple();
-    golden_grove();
+    subtle_thorn();
+    placid_maple();
     return quiet_thorn();
 }
